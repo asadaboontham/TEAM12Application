@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asadaboomtham.teamapplication.LoginActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <!-- ################   Login Layout ################# -->
+        <!-- ################  รอภาพ 9 patch : android:background="@drawable/login3" ################# -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <!-- ################  รอภาพ 9 patch : ใส่ก่อนเพื่อความสวยงาม ################# -->
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/subaru" />
+
+            <!-- ################  จบรอภาพ 9 patch : ใส่ก่อนเพื่อความสวยงาม ################# -->
+
+
+            <!-- ################   Username Entry ################# -->
+
+
+            <LinearLayout
+                android:id="@+id/usernameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ################  Username Icon ################# -->
+
+                <!-- ################ Username EditText ################# -->
+                <EditText
+                    android:id="@+id/editTextUsername"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="50dp" />
+
+                <!-- ################  Close Username Entry ################# -->
+            </LinearLayout>
+
+            <!-- ################   Password Entry ################# -->
+            <LinearLayout
+                android:id="@+id/passwordView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+
+                <!-- ################  Password EditText ################# -->
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:paddingLeft="16dp" />
+
+
+                <!-- ################   Close Password Entry ################# -->
+            </LinearLayout>
+
+
+            <!-- ################  Login Button ################# -->
+            <LinearLayout
+                android:id="@+id/signinView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- ################  Login Button ################# -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOG IN"
+                    android:textColor="#000" />
+
+
+                <!-- ################   Close Login Button ################# -->
+            </LinearLayout>
+            <!-- ################   Close Login Layout  ################# -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE NEW ACCOUNT"
+                android:textColor="#000" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
